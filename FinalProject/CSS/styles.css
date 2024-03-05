@@ -1,0 +1,371 @@
+/* Setting font, background, and removing horizontal scrollbar for whole webpage */
+body {
+	background-color: #8a0024;
+	font-family: "Trebuchet MS", sans-serif;
+	overflow-x: hidden;
+}
+
+/* Styling for header used on all pages */
+#Logo {
+	width: 6%;
+	border-radius: 75px 75px 75px 75px;
+	z-index: 2;
+	top: 10%;
+	left: 3%;
+	position: absolute;
+}
+
+.image {
+	position: relative;
+	width: 106%;
+	margin-left: -2%;
+	margin-top: -1%;
+	z-index: 0;
+}
+
+.image #headImg {
+	width: 110%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  margin-top: 15px;
+  margin-left: 40px;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1 {
+	font-size: 60px;
+	font-size: 2.5vw;
+	top: 20%;
+    left: 5%;
+    right: 0;
+	height: 0;
+	text-shadow: 5px 5px 4px #b00937;
+	z-index: 2;
+	width: 50%;
+	position: absolute;
+}
+
+#Login {
+	right: 0;
+	top: 10%;
+	padding: 15px;
+	margin-right: 150px;
+	width: 7%;
+	border-radius: 15px;
+	color: white;
+	background-color: black;
+	z-index: 2;
+	position: absolute;
+}
+
+/* Styles used for navigation bar at top and bottom of page */
+nav {
+	background-color: black;
+	padding: 20px;
+	padding-top: 40px;
+	margin: 10px;
+	width: 101%;
+	margin-top: -1%;
+	margin-left: -1%;
+	margin-bottom: 2%;
+	display: grid;
+	text-align: center;
+	z-index: 2;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+footer {
+	background-color: black;
+	padding: 20px;
+	margin: 10px;
+	margin-top: 65px;
+	border-radius: 8px;
+}
+
+#footerText {
+	text-align: right;
+	color: white;	
+	font-size: 10px
+}
+
+#footerNav {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+nav a, nav span {
+	font-size: 25px;
+	color: white;
+}
+
+nav span {
+	padding: 15px;
+}
+
+footer a {
+	margin-right: 5px;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+a:link, p a:link, h3 a:link { 
+  text-decoration: none;
+}
+
+a:hover, nav span:hover, h3 a:hover {
+	color: #b00937;
+}
+
+
+/* set up the content on all pages, so they have similar look */
+.content {
+	width: 90%;
+	background-color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 8px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h1, h2, h3, h4 {
+	margin-top: 20px;
+	margin-left: 8%;
+	margin-bottom: 20px;
+}
+
+p {
+	margin-left: 8%;
+}
+
+p, p a {
+	color: black;
+}
+
+/* Style buttons on discussion post */
+.discussion {
+	padding: 3px;
+	width: 12%;
+	border-radius: 15px;
+	color: white;
+	background-color: black;
+	font-size: 15px;
+	margin-left: 5%;
+	cursor: pointer;
+	float: right;
+}
+
+.butn {
+	padding: 5px;
+	width: 12%;
+	border-radius: 15px;
+	color: white;
+	background-color: black;
+	font-size: 20px;
+	margin-left: 16%;
+	cursor: pointer;
+}
+
+/* Style table used for schedule on home page */
+table {
+	margin-left: 5%;
+	margin-right: 10%;
+	width: 90%;
+	height: 60%;
+	border: 1px solid #8a0024;
+
+}
+
+table tr th, table tr td{
+	width:14%;
+	height: 20%;
+}
+
+th {
+	padding-top: 10px;
+}
+
+td {
+	padding: 50px;
+	text-align: left;
+}
+
+/* Style used for onclick table event */
+.highlight {
+	display: block;
+	background-color: #8a0024;
+	font-size: 20;
+	width: 100%;
+	color: white;
+	padding: 20px;
+	margin-left: 5%;
+	padding-left: 5%;
+}
+
+.highlight p {
+	margin-left: -5%;
+	width: 80%;
+}
+
+/* Style used on all forms */
+input[type=submit] {
+	margin-left: 10%;
+	padding: 5px;
+	width: 100px;
+	border-radius: 15px;
+	color: white;
+	background-color: black;
+	font-size: 20px;
+}
+
+input[type=submit]:hover, #Login:hover {
+	color: #b00937;
+}
+
+input[type=submit]:active, #Login:active {
+	background-color: #333333;
+}
+
+form {
+	background-color: #b00937;
+	margin-left: 10%;
+	margin-right: 45%;
+	margin-bottom: 50px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+form label {
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+form input[type=submit] {
+	margin-left: 75%;
+	padding: 5px;
+	width: 12%;
+	border-radius: 15px;
+	color: white;
+	background-color: black;
+	font-size: 20px;
+}
+
+form input[type=file] {
+	margin-left: 20px;
+}
+
+select {
+	margin-left: 20px;
+	box-sizing: border-box;
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+	height: 100px;
+}
+
+form textarea, form input[type=text], form input[type=password], form input[type=number], form input[type=email], form input[type=file] {
+	margin-left: 20px;
+	box-sizing: border-box;
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+form input[type=file] {
+	background-color: #c9c9c9;
+}
+
+.error {
+	text-align: right;
+	margin-right: 5%;
+}
+
+.counter {
+	margin-left: 3%;
+	color: white;
+}
+
+/* Used for LeetCode plugin on 'Weekly Challenge' page */
+iframe {
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-bottom: 20px;
+}
+
+
+/* Used to format all posts on every discussion board */
+.pastPosts {
+	font-family: "Trebuchet MS", sans-serif;
+	background-color: #eee;
+	width: 50%;
+	margin-left: 10%;
+	padding: 7px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: #dedede solid;
+	border-radius: 5px;
+	padding-bottom: 40px;
+}
+
+/* Style test on 'About' page */
+.content ul {
+	list-style-type: none;
+}
+
+.content ul li {
+	font-size: 20px;
+	padding: 10px;
+	margin-left: 8%;
+}
+
+.About {
+	font-size: 22px;
+	padding: 10px;
+	margin-left: 9%;
+	margin-right: 10%;
+}
+
+/* Adjust contact info on contact page */
+#contact {
+	margin-left: 2%;
+}
+
+/* Style select to join project */
+#projects {
+	margin-left: 20px;
+	box-sizing: border-box;
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+	height: 10%;
+}
+
+/* Style profile picture */
+#profilePic {
+	margin-left: 10%;
+	border-radius: 4px;
+}

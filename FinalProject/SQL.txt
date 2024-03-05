@@ -1,0 +1,42 @@
+CREATE TABLE IF NOT EXISTS challenge (
+	post_ID INT AUTO_INCREMENT,
+	username VARCHAR(20),
+	title VARCAHR (30),
+	body VARCHAR(200)
+};
+
+CREATE TABLE IF NOT EXISTS jobs {
+	jobNumber INT AUTO_INCREMENT,
+	job_title VARCHAR(30),
+	job_location VARCHAR(30),
+	job_url VARCHAR(30),
+	username VARCHAR(20)
+};
+
+CREATE TABLE IF NOT EXISTS network {
+	network_ID INT AUTO_INCREMENT,
+	name VARCHAR(40),
+	grad_year INT,
+	profile_links VARCHAR(80),
+	username VARCHAR(20)
+};
+
+CREATE TABLE IF NOT EXISTS project {
+	project_ID INT AUTO_INCREMENT,
+	title VARCHAR(30),
+	link VARCHAR(50),
+	skills VARCHAR(80),
+	description VARCHAR(200),
+	username VARCHAR(20),
+	team_members VARCHAR(200)
+};
+
+CREATE TABLE IF NOT EXISTS users {
+	userID INT AUTO_INCREMENT,
+	userName VARCHAR(30) UNIQUE,
+	password VARCHAR(60),
+	name VARCHAR(30),
+	year INT,
+	skills VARCHAR(80),
+	image VARHCAR(50)
+};

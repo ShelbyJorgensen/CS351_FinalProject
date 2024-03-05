@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="../CSS/styles.css" rel="stylesheet">
+		<script src="../JavaScript/joinScript.js" defer></script>
+		<title>Create Account</title>
+	</head>
+	<body>
+		<div class="image">
+			<a href="../Index.html"><img src="../Images/CWULogo.jpg" alt="CWU Logo" id="Logo"></a>
+			<img src="../Images/CWUCampus.jpg" alt="Barge Hall on CWU campus" id="headImg">
+			<h1>Login</h1>
+			<a href="Login.html"><input type="submit" value="Login" id="Login"></a>
+		</div>
+		<nav>
+			<a></a>
+			<a href="Project.html">Projects</a>
+			<a href="Networking.html">Networking</a>
+			<a href="Challenge.html">Weekly Challenge</a>
+			<a href="Jobs.html">Jobs</a>
+			<div class="dropdown">
+				<span>More</span>
+				<div class="dropdown-content">
+					<a href="About.html">About Us</a><br><br>
+					<a href="Contact.html">Contact Us</a><br><br>
+					<a href="User.html">Profile</a><br><br>
+				</div>
+			</div>
+			<a></a>
+			<a></a>
+		</nav>
+		<div class="content">
+			<br><br>
+			<h2>Create Your Profile</h2>
+			<form id="joinForm">
+				<br>
+				<label for="joinUserName">User Name</label><br>
+				<input type="text" id="joinUserName">
+				<br><br>
+				<label for="joinPassword">Password</label><br>
+				<input type="password" id="joinPassword">
+				<br><br>
+				<label for="joinName">Name</label><br>
+				<input type="text" id="joinName">
+				<br><br>
+				<label for="year">Graduation Year</label><br>
+				<input type="number" id="year" value="2024">
+				<br><br>
+				<select name="skills" id="joinSkillsList" multiple>
+					<option value="Java">Java</option>
+					<option value="Python">Python</option>
+					<option value="C/C++">C/C++</option>
+					<option value="JavaScipt">JavaScript</option>
+					<option value="Node.js">Node.js</option>
+					<option value="SQL">SQL</option>
+					<option value="Go">Go</option>
+					<option value="PHP">PHP</option>
+				</select><br><br>
+				<label for="profilePhoto">Upload a Profile Picture (Optional)</label>
+				<input type="file" id="profilePhoto" accept=".png,.jpg,.gif">
+				<br><br>
+				<input type="submit" value="Join"><br>
+				<p class="error" id="joinError"></p><br>
+			</form>
+			<br><br>
+		</div>
+	</body>
+	<footer>
+		<p id="footerText">Created in partnership with Central Washington University, Des Moines</p><br>
+		<div id="footerNav">
+			<a href="../Index.html">Home</a>
+			<a href="Project.html">Projects</a>
+			<a href="Networking.html">Networking</a>
+			<a href="Challenge.html">Weekly Challenge</a>
+			<a href="Jobs.html">Jobs</a>
+			<a href="About.html">About Us</a>
+			<a href="Contact.html">Contact Us</a>
+			<a href="User.html">Profile</a>
+		</div>
+	</footer>
+</html>
